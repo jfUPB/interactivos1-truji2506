@@ -34,3 +34,6 @@ Familiarizarse con lenguajes de programación como Python o herramientas especí
 Evaluar de manera estratégica las soluciones generadas para identificar cuál se ajusta mejor al objetivo.
 ###### Colaboración interdisciplinaria: 
 Trabajar en equipo con programadores, ingenieros y especialistas en datos para enriquecer los procesos creativos.
+
+##### Conclusión
+El diseño generativo amplía las posibilidades creativas, pero también transforma profundamente el rol del diseñador, quien se convierte en un guía estratégico del proceso en lugar de un ejecutor manual. Este cambio requiere una combinación de habilidades técnicas, conceptuales y analíticas que permiten aprovechar al máximo las capacidades de la tecnología, sin perder la esencia creativa que define al diseño.
