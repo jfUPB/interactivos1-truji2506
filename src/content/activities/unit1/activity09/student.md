@@ -1,6 +1,6 @@
 #### Solución actividad 9 
 
-![image](https://github.com/user-attachments/assets/18d3065b-e8e0-4d15-80e0-82c5f8f5b10b)
+![image](../../../../assets/act09.png)
 
 #### Funciones utilizadas
 
