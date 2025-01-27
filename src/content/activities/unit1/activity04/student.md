@@ -1,4 +1,4 @@
-#### Soliucion actividad 4  
+#### Solución actividad 4  
 
 ##### La Transformación del Rol del Diseñador en el Contexto del Diseño Generativo
 El diseño generativo representa un cambio significativo en el papel del diseñador, quien deja de ser un “artesano” enfocado en la creación manual y 
