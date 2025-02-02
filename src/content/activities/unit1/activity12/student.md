@@ -1,4 +1,32 @@
 #### Solucion actividad 12 
+
+#### Declaración de variables globales
+Aquí declaramos tres variables:
+
+##### port:
+Para manejar la conexión serial con la micro:bit.
+##### connectBtn: 
+Botón para conectar/desconectar la micro:bit.
+##### buttons: 
+Un array donde guardaremos los botones dinámicamente.
+
+#### setup() - Configuración inicial
+*Crea un lienzo donde se mostrará información visual.
+*Inicializa port para manejar la comunicación con la micro:bit.
+*Crea un botón para conectar y desconectar la micro:bit.
+*Define un array buttonData con la información de cada botón.
+*Usa forEach() para crear cada botón de manera automática.
+*Cada botón al ser presionado enviará un comando diferente a la micro:bit.
+*Si presionas el botón "Heart", se enviará la letra "h" a la micro:bit
+*Lee Datos de la micro:bit y cambia los colores dependiendo el valor recibido.
+*Dibuja un circulo en la pantalla para representar el estado del sistema
+*Muestra el carácter recibido en el centro de la pantalla
+*Cambia el texto del botón dependiendo de si la conexión está activa o no.
+* Si la micro:bit envía "A", el color de la elipse será rojo
+* Si envia "B", el color de la elipse será amarillo
+* Si enviar "C", el color será verde
+* Si el puerto no está abierto, lo abre para comunicarse con la micro:bit
+* Si el puerto ya está abierto, lo cierra
 ```c
 let port;
 let connectBtn;
