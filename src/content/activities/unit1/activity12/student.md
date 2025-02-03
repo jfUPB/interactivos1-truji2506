@@ -35,7 +35,7 @@ let buttons = [];
 function setup() {
     createCanvas(600, 600);
     background(200);
-  
+
     port = createSerial();
     connectBtn = createButton('Connect to micro:bit');
     connectBtn.position(80, 300);
@@ -91,6 +91,16 @@ function connectBtnClick() {
         port.close();
     }
 }
+
+function sendCommand(command){
+  if (port.opened()) {
+    port.write(command);
+  }
+  else{
+    print("Debes conectar el micro:bit")
+  }
+}
+
 ```
 
 
