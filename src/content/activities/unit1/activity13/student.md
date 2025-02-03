@@ -49,7 +49,19 @@ Código del programa en p5.js y una captura de pantalla del patrón visual gener
 Para la elaboración de la actividad se pidio ayuda a ChatGPT para que me guie un poco al momento de elaborar el codigo para crear el patron visual generado, se realizo una descripción breve para las funciones utilizadas y como modifiqué los parámetros.
 
 #### Actividad 10
+código del programa en p5.js y el código para micro:bit. Describe el proceso de conexión y comunicación entre ambos dispositivos.
 
+Para esta actividad se creo un programa en p5.js que mostraba un cuadrado en la pantalla, donde se conecto el micro:bit y se programo un boton para que al presionarlo, cambie de color del cuadrado en p5.js en esta actividad tuve que apoyarme en varias actividades anteriores y asi poder sacar el ejercicio adelante, fue tambien con un poco de investigación.
+
+#### Actividad 11 
+Código del programa en p5.js y el código para micro:bit. Describe cómo es posible mapear los botones al movimiento del círculo.
+
+En este ejercicio se me hizo un poco mas complejo pero sin ningun tipo de inconveniente, tuve que realizar unas consultas de ChatGPT donde me explico como mapear los botones y entender como p5.js recibe la programación orientada a objetos.
+
+#### Actividad 12 
+código del programa en p5.js y el código para micro:bit. Describe cómo solucionaste el problema.
+
+Para este ejercicio tome codigo de anteriores actividades realice varias modificaciones y medio funcionaba con 3 imagenes aunque no en los tiempos que yo queria, le pregunte al profesor me realizo varias observaciones y las aplique segun mi conocimiento, me surgio un error al momento de compilar y investigue en chatGPT me ayudo a corregirlo y funciono perfectarmente las 4 imagenes necesarias para el ejercicio 
 
 
 
