@@ -9,7 +9,7 @@ Y ademas pasamos el ultimo_Caracter a un String
 Me aseguro que presionando la tecla A del caracter nos muestre el feedback del microbit 
 
 
-´´´c
+```c
 from microbit import *
 uart.init(baudrate=115200)
 ultimo_caracter = "?"
