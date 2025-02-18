@@ -9,7 +9,7 @@ Presionando B en el microbit podemos evidenciar un corazon en el feedback de los
 Presionando el logo del microbit podemos evidenciar un fantasma en el feedback de los leds, despues de terminar esta animación podremos evidenciar la salida del texto donde dice Python 
 
 
-```p
+```c
 from microbit import *
 
 while True:
