@@ -1,5 +1,29 @@
 #### Solución actividad 10
 
+#### ¿Como se logra la concurrencia?
+El programa implementa concurrencia mediante el manejo de eventos y transiciones de estado en un bucle continuo que seria el while true asi logrando realizar varias tareas al mismo tiempo gracias a los siguiente metodos:
+Evaluacion continua de estados, manejo simultaneo de eventos siendo temporales o de usuario donde se ve involucrado el utime.ticks_diff y el button a was pressed, ademas de las transiciones de estado 
+
+#### Los vectores de prueba fueron elaborados 
+
+##### Vector de prueba 1 
+Condicion inicial: STATE_SAD 
+Evento el cual lo envia: SAD_INTERVAL
+Estado esperado: STATE_SAD a SAD_INTERVAL
+Acción esperada: Image.Angry
+
+##### Vector de prueba 2
+Condicion inicial: STATE_ANGRY 
+Evento el cual lo envia: ANGRY_INTERVAL
+Estado esperado: STATE_ANGRY a ANGRY_INTERVAL
+Acción esperada: Image.SAD
+
+##### Vector de prueba 3
+Condicion inicial: STATE_DIAMOND
+Evento el cual lo envia: DIAMOND_INTERVAL
+Estado esperado: STATE_DIAMOND a DIAMOND_INTERVAL
+Acción esperada: Image.RABBIT
+
 ```c
 from microbit import *
 import utime
