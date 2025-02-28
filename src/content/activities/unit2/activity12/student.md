@@ -26,7 +26,7 @@ En el estado Exposion muestra una calavera y reproduce el sonido de explosion, e
 
 En el estado Reset muestra de nuevo la cara feliz y si se presiona en el boton del logo se limpia a pantalla y se regresa al estado inicial 
 
-´´´c
+```c
 from microbit import *
 import utime
 import music
@@ -110,4 +110,4 @@ while True:
             tiempo = 20
             display.clear()
             current_state = STATE_INIT
-´´´´
+````
