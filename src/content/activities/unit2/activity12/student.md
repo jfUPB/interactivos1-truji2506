@@ -103,7 +103,6 @@ while True:
         utime.sleep(1)
         current_state = STATE_RESET
 
-    # Estado de reinicio
     elif current_state == STATE_RESET:
         display.show(Image.HAPPY)
         if pin0.read_digital():  
