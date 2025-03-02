@@ -58,7 +58,6 @@ while True:
     elif current_state == STATE_CONFIG:
         if button_a.was_pressed() and tiempo < 60:
             tiempo += 1
-            # Muestra números del 1 al 9 directamente, y mayores de 9 con scroll
             if tiempo < 10:
                 display.show(str(tiempo))
             else:
