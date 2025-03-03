@@ -1,1 +1,3 @@
 #### Solucion actividad 15
+
+Durante esta unidad aprendi a realizar pruebas exhaustivas en un programa, documentando cada paso del proceso para identificar errores y corregirlos de manera eficiente. La importancia de estructurar casos de prueba antes de la ejecucin me permitio detectar problemas como fallos en la cuenta regresiva y la inestabilidad del reinciio del temporizador en el microbit, ademas comprendi la relevancia de utilizar herramientas adecuadas para la depuracion y como pequeños ajustes, como estabilizar la lectura de un pin o cambiar la condicion de reproduccion de un sonido aunque ya habiamos implementado un ejercicio solo de sonido y esto puede ayudar a realizar una diferencia.
