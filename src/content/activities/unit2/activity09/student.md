@@ -4,53 +4,50 @@ from microbit import *
 import utime
 
 class Semaforo:
-    def __init__(self, rojo, amarillo, verde, initState):
-        self.state = initState
-        self.startTime = utime.ticks_ms()
+    def __init__(self,rojo,amarillo,verde, initState):
+        self.state = "Init"
+        self.startTime = 0
         self.rojo = rojo
-        self.amarillo = amarillo
-        self.verde = verde
+        self.amarillo= amarillo
+        self.verde= verde
+        self.semaforostate= initState
 
     def update(self):
-        currentTime = utime.ticks_ms()
 
         if self.state == "Init":
+            self.startTime = utime.ticks_ms()
             self.state = "WaitTimeoutRojo"
-            self.startTime = currentTime
-            display.set_pixel(self.rojo["x"], self.rojo["y"], 9)
-
+            display.set_pixel(self.rojo["x"],self.rojo["y"],9)
+            
         elif self.state == "WaitTimeoutRojo":
-            if utime.ticks_diff(currentTime, self.startTime) > self.rojo["interval"]:
-                display.set_pixel(self.rojo["x"], self.rojo["y"], 0)
-                self.startTime = currentTime
+            if utime.ticks_diff( utime.ticks_ms() , self.startTime) > self.rojo["interval"]: 
+                self.startTime = utime.ticks_ms()
+                display.set_pixel(self.rojo["x"],self.rojo["y"],0)
+                display.set_pixel(self.amarillo["x"],self.amarillo["y"],9)
                 self.state = "WaitTimeoutAmarillo"
-                display.set_pixel(self.amarillo["x"], self.amarillo["y"], 9)
 
         elif self.state == "WaitTimeoutAmarillo":
-            if utime.ticks_diff(currentTime, self.startTime) > self.amarillo["interval"]:
-                display.set_pixel(self.amarillo["x"], self.amarillo["y"], 0)
-                self.startTime = currentTime
+            if utime.ticks_diff( utime.ticks_ms() , self.startTime) > self.amarillo["interval"]: 
+                self.startTime = utime.ticks_ms()
+                display.set_pixel(self.amarillo["x"],self.amarillo["y"],0)
+                display.set_pixel(self.verde["x"],self.verde["y"],9)
                 self.state = "WaitTimeoutVerde"
-                display.set_pixel(self.verde["x"], self.verde["y"], 9)
-
+                
         elif self.state == "WaitTimeoutVerde":
-            if utime.ticks_diff(currentTime, self.startTime) > self.verde["interval"]:
-                display.set_pixel(self.verde["x"], self.verde["y"], 0)
-                self.startTime = currentTime
+            if utime.ticks_diff(utime.ticks_ms(), self.startTime) > self.verde["interval"]:
+                self.startTime = utime.ticks_ms()
+                display.set_pixel(self.verde["x"], self.verde["y"],0)
+                display.set_pixel(self.rojo["x"], self.rojo["y"],9)
                 self.state = "WaitTimeoutRojo"
-                display.set_pixel(self.rojo["x"], self.rojo["y"], 9)
 
-semaforo = Semaforo(
-    {"x": 0, "y": 0, "interval": 1000},
-    {"x": 1, "y": 0, "interval": 1000},
-    {"x": 2, "y": 0, "interval": 1000},
-    "Init"
-)
+
+semaforo = Semaforo({"x":0,"y":0,"interval":1000},{"x":0,"y":1,"interval":1000},{"x":0,"y":2,"interval":1000},"Init")
 
 while True:
     semaforo.update()
     utime.sleep_ms(100)
-````
+
+```
 #### Estados del semaforo 
 1. Init: Estado inicial del semaforo
 2. WaitTimeoutRojo: Espera el tiempo asignado al rojo
