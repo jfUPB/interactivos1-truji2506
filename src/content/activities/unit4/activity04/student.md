@@ -90,3 +90,10 @@ Por que solo se debe generar un evento cuando el estado cambia. Si no guardamos 
 #### ¿Qué pasaría si no se almacenara el estado anterior?
 Si no se almacenara, entonces cada vez que se leyera un true, se ejecutaria KeyPresset() una y otra vez, aunque el boton no se haya soltado ni vuelto a presionar. 
 
+#### ¿Qué significa esto?
+significa que la aplicación está esperando una línea de texto con 4 valores separados por comas, pero está recibiendo algo diferente.
+
+#### ¿Por qué? ¿Qué puedes hacer para solucionar este problema?
+es importante verificar que el micro:bit esté enviando los datos correctamente, por ejemplo: print("{},{},{},{}".format(x, y, a, b)). También se puede mejorar el código en p5.js para ignorar líneas vacías o con formato incorrecto, e incluso omitir los primeros datos después de conectar el micro:bit para evitar leer información basura. Este problema no tiene una única solución, pero el objetivo es garantizar que los datos seriales tengan siempre el formato esperado.
+
+
