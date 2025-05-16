@@ -1,0 +1,3 @@
+#### Solución actividad 1 
+
+La programación de microcontroladores tiene un papel escencial en el diseño de entretenimiento digital, ya que permite la creacion de experiencias interactivas y personalizadas. En mi futuro profesional como IDED, los microcontroladores son muy importantes en el desarrollo de hardware para videojuegos, instalaciones artísticas interactivas y dispositivos de realidad aumentada o virtual. Por ejemplo, en exposiciones de arte digital, un microcontrolador como Arduino que puede gestionar sensores de movimiento para reaccionar al público, creando experiencias inmersivas. También se utilizan en controles hapticos para videojuegos, donde proporcionan retroalimentación tactil que mejora la inmersión del usuario.
